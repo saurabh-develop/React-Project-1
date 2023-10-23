@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-container {
+  padding-top: 50px;
+  width: 1125px;
+  height: 613px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.left-content {
+  width: 595px;
+  height: 613px;
+}
+h1 {
+  width: 595px;
+  height: 306px;
+  font-family: "Poppins";
+  font-size: 90px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+.content {
+  width: 404px;
+  height: 91px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+}
+.button {
+  padding-top: 10px;
+  width: 331px;
+  height: 41px;
+  justify-content: space-between;
+}
+.btn {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 140px;
+  height: 37px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.shop-button {
+  background-color: red;
+  border: none;
+  color: white;
+}
+.shop-link {
+  width: 131px;
+  height: 67px;
+  padding-top: 10px;
+}
+.amazaon-link {
+  padding-top: 10px;
+  width: 32px;
+  height: 32px;
+}
+.right-content {
+  width: 595px;
+  height: 613px;
+}
+.shoes-img {
+  width: 530px;
+  height: 487.06px;
+}
