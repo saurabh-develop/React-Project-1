@@ -1,6 +1,18 @@
 import React from "react";
+import { useState } from "react";
 
 function Conatct() {
+  const [name, setname] = useState("");
+  const [email, setemail] = useState("");
+  const [description, setdescription] = useState("");
+  const onSubmit = (event) => {
+    event.preventDefault();
+
+    setname(event.target[3].value);
+    setemail(event.target[4].value);
+    setdescription(event.target[5].value);
+  };
+
   return (
     <>
       <div className="contact-content">
@@ -16,7 +28,7 @@ function Conatct() {
             <img className="left-body" src="contact-image.jpg" alt="img" />
           </div>
           <div className="right-body">
-            <form>
+            <form onSubmit={onSubmit}>
               <button className="chat-button btn1">
                 <img className="chat-img" src="chat-icon.png" alt="img" />
                 <span className="btn-text">VIA SUPPORT CHAT</span>
@@ -47,6 +59,7 @@ function Conatct() {
                   placeholder="Text"
                 ></textarea>
                 <button className="submit-btn btn1">SUBMIT</button>
+                <div>{name + " " + email + " " + description}</div>
               </div>
             </form>
           </div>
